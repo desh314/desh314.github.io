@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday!</title>
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;  /* Ensures the page extends the full height */
+            overflow-x: hidden;  /* Prevents horizontal scroll */
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f8d0d4;
@@ -17,7 +24,7 @@
             height: 100vh;
             text-align: center;
         }
-        h1 {
+        h1,h2 {
             font-size: 3em;
             margin-bottom: 20px;
             color: #ff4d7b;
@@ -33,22 +40,122 @@
             object-fit: cover;
             margin-bottom: 30px;
         }
+        .video-container {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 20px; /* Makes the space rounded */
+            margin-bottom: 30px;
+            text-align: center;
+            justify-content: center;
+            display: table;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: flex;
+            justify-content: center;
+        }
         .footer {
             font-size: 1.2em;
             color: #ff4d7b;
             margin-top: 40px;
+        }
+
+        hr {
+            width: 60%;
+            border: 1px solid #ff4d7b;
+            margin: 20px auto;
+        }
+        .content {
+            max-width: 800px; /* Optional: limits content width */
+            width: 100%;
+        }
+        .subheading {
+            font-size: 1.8em; /* Slightly smaller than h1 */
+            color: #ff4d7b;
+            margin-top: 10px;
+        }
+        .photo-frame {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 25px; /* Rounded rectangle frame */
+            margin-bottom: 30px;
+            border: 5px solid #ff4d7b; /* Pink border for the frame */
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures image fills the frame without distortion */
         }
     </style>
 </head>
 <body>
 
     <div>
-        <img src="./bdayImg.jpeg" alt="Birthday Image" class="birthday-image">
-        <h1>Happy Birthday!</h1>
-        <div><object data="./message.txt"></object></div>
-        <div class="footer">
-            Can't wait to tease you in real life, <br> Anirdesh (your second best friend)
+
+        <div>
+            <img src="./bdayImg.jpeg" alt="Birthday Image" class="birthday-image">
+            <h1>🎉🎉 Happy Birthday Mridula! 🎉🎉</h1>
+            <div> <object data="./message.txt" height="300" width = "600"></object>
+            </div>
+            <div class="footer">
+                Cant wait to tease you in real life, <br> Anirdesh (Your second best friend)
+            </div>
         </div>
+
+        <hr>
+
+        <div class="video-container">
+            <video controls>
+                <source src="./luma.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+           
+            <h2 class="subheading">Viewwwwssss. Life is beautiful 💗💗💗</h2>
+        </div>
+
+        <hr>
+
+        <div class="photo-frame">
+            <img src="./grad1.jpeg" alt="Birthday Image">
+            <h2 class="subheading">Thanks for the flowers!</h2>
+        </div>
+
+        <hr>
+
+        <div class="video-container">
+            <video controls>
+                <source src="./kajen1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h2 class="subheading">Why cant we use a camera??😂😂😂</h2>
+        </div>
+
+        <hr>
+
+        <div class="photo-frame">
+            <img src="./hg1.JPG" alt="Birthday Image">
+            <h2 class="subheading">Matching?? Stop copying me. Its not funny.</h2>
+        </div>
+
+        <hr>
+
+        <div class="video-container">
+            <video controls>
+                <source src="./kajen2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h2 class="subheading">Mukbang shenanigans... Also 4x zoom is superior.</h2>
+        </div>
+
     </div>
 
 </body>
